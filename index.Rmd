@@ -5,67 +5,27 @@ output: html_document
 
 ### Introduction
 
-An introduction of the problem domain and a description of the variable(s) you are choosing to analyze (and why!)
+In this world, there are now many incidents that includes race like how for example, Black people getting arrested for doing nothing. The variables that i mentioned and calculate is regarding the difference races that are put into jail. Whether, it's Black, White, Asian, latin, and native, I'm trying to see the difference between them in 2017 and compare the numbers between this races. 
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-
-These will likely be calculated using your DPLYR skills, answering questions such as: 
-
-- What is the average value of my variable across all the counties (in the current year)?
-- Where is my variable the highest / lowest?
-- How much has my variable change over the last N years?
-
-Feel free to calculate and report values that you find relevant. Again, remember that the purpose is to think about how these measure of incarceration vary by race.
+I have obtained that the average value for all of the races in 2017 with their highest and lowest value and also how much does it change over 3 years. Which, I would be only descibring the Black and White race because I use those values on my chart. The average for Black would 2543.683 and White is 486.5253. The highest and lowest value for Black would be 181333.3 and 0. Whereas, the White is 66234.2 and 0.
 
 ### The Dataset
 
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+The one who collected the data are the U.S Department of Justice Bureau of Justice Statistics The BJS census of jails, The Death in Custody Reporting Program, and the Annual Survey of Jails. The data was collected by getting the data from the help of the government that has the record of the jail intakes and custody. The data was collected to inform the public debate on mass incarceration and help guide change by providing easily accessible information on the number of people in jails and prisons for every county in the United States. There are 91.031 rows in the data and 23 columns in the data. Of course there would be question like why does this specific race has more numbers than the others and why does this has lower number compare to the others, with that there would rise a problem like racism or inequality towards some of the race. The possible limitations would be there isn't any reason on why are there getting into jail for in each of the data, I believe that if we know the reason it would be easier to compare between the races. 
 
 
 ### Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The first chart that you will create and include will show the trend over time of your variable/topic. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - This may mean showing the same measure for different locations or different racial groups. Think carefully about a meaningful comparison of locations (e.g., the top 10 counties in a state, top 10 states, etc.)
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
-```
+{r, echo = FALSE, code = readLines("first_chart.R")}
+This chart is included to show the number of Black people that were in jail though out the years. In the chart, it's shown that in the end of 1900s, there were a lot of Black people that were in jail with unknown reason it's recorded as the highest surpassing 200.000 individuals. This is also recorded in the top 5 counties, where the most highest Black people that were recorded in jail. 
 
 ### Variable Comparison Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The second chart that you will create and include will show how two different (continuous) variables are related to one another. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
-
+{r, echo = FALSE, code = readLines("Second_chart.R")}
+In this chart, there would be a comparison or relationship between Black and White people that are in jail. From the chart, it's shown that there many more Black in jail compare to Whites because there is comparison in the bottom where White is a little over 0, but for the Black it could surpass 100.000 people easily there are multiple occasions on that is happening. Whereas, the White has more than 40.000 compare to Black with 0 people in jail, there is a huge difference between those variables and circumstance. 
 ### Map
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The last chart that you will create and include will show how a variable is distributed geographically. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Your map needs a title
-- Your color scale needs a legend with a clear label
-- Use a map based coordinate system to set the aspect ratio of your map
-
+{r, echo = FALSE, code = readLines("Third_chart.R")}
+In this last chart, in the west coast, the jail jurisdiction area is far more bigger compare to east coast where it's relatively smaller in size compare to the west coast jail for the Black people. from this graph, we can conclude that the east has far more Black people jail occupants than the west coast considering there is a lot more area to cover because there many jail covering each state and county. 
