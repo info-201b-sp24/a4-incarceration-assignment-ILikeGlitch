@@ -18,7 +18,7 @@ The one who collected the data are the U.S Department of Justice Bureau of Justi
 
 ### Trends Over Time Chart
 
-{r, echo = FALSE, code = readLines("first_chart.R")}
+{r, echo = FALSE, code = readLines("First_chart.R")}
 This chart is included to show the number of Black people that were in jail though out the years. In the chart, it's shown that in the end of 1900s, there were a lot of Black people that were in jail with unknown reason it's recorded as the highest surpassing 200.000 individuals. This is also recorded in the top 5 counties, where the most highest Black people that were recorded in jail. 
 
 ### Variable Comparison Chart
